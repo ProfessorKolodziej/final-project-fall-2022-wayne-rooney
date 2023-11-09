@@ -10,6 +10,91 @@ primary color variable below.
 	--color-secondary: #c00;
 }
 
+.top-bar {
+    background-color: #0E1727;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.top-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.all {
+  background-color: #0E1727
+}
+
+h1 {
+  color: #FFF;
+  font-family: Rubik, sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.youngster-h2 {
+	color: #FFF;
+	font-family: Rubik, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+}
+
+.everton-h2 {
+	color: #769BE1;
+	font-family: Rubik, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+
+}
+
+
+p {
+	color: #FFF;
+	font-family: Allerta, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.highlight {
+	border-radius: 6px;
+	background: var(--cyan-600, #0AA2C0);
+	display: flex;
+	width: 172px;
+	height: 30px;
+	padding: 16px 24px;
+	align-items: flex-start;
+	gap: 8px;
+	flex-shrink: 0;	
+	color: var(--default-white, #FFF);
+	text-align: center;
+	font-family: Inter, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 0px; 	
+}
+
+
 /*
 CSS doesn't allow variables to be used in media
 queries just yet, but you can use these values
@@ -22,9 +107,7 @@ to help you out.
 	--size-xl: 1200px;
 */
 
-h1 {
-	color: var(--color-primary);
-}
+
 
 /* This uses the same value as --size-xs. */
 @media screen and (width >= 320px) {
