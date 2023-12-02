@@ -6,15 +6,23 @@ primary color variable below.
 */
 
 
+body {
+	background-color:#0E1727;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
 .top-bar {
     background-color: #0E1727;
     color: #fff;
     text-align: center;
     padding: 10px;
-	font-family: Rubik;
+	font-family: Rubik, sans-serif;
 	font-size: 95%;
 	display: flex;
 	align-items: center;
+	position: fixed;
 }
 
 .top-bar ul {
@@ -22,7 +30,7 @@ primary color variable below.
     margin: 0;
     padding: 0;
 	width: 98%;
-	height: auto'
+	height: auto;
 }
 
 .top-bar ul li {
@@ -35,30 +43,40 @@ primary color variable below.
     color: #fff;
 }
 
+.menu-h2 ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.top-bar li a:hover,
+.top-bar li a.active {
+	color:#0E1727;
+	background:#FFF;
+}
+
 .logo {
 	max-width: 100px;
 	width: 80%;
 }
 
 .menu-image {
-	opacity: 20%;
+	opacity: 0.2;
 	width: 100%;
-	psotion: absolute;
 }
 
 .menu-h2 {
     color: #fff;
     text-align: center;
     padding: 10px;
-	font-family: Rubik;
-	font-size: 250%;
+	font-family: Rubik, sans-serif;
+	font-size: 200%;
 	display: flex;
 	align-items: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	margin-top: 25%;
+	margin-top: 12%;
 }
 
 .menu-h2 ul {
@@ -75,10 +93,6 @@ primary color variable below.
 
 }
 
-.menu-h2 ul li a {
-    text-decoration: none;
-    color: #fff;
-}
 
 .start-content {
 	position: absolute;
@@ -99,7 +113,7 @@ primary color variable below.
 }
 
 .all {
-  background-color: #0E1727
+  background-color: #0E1727;
 }
 
 .heading-content {
@@ -228,7 +242,6 @@ p {
 }
 
 .social-media {
-	align-item: center;
 	margin-left: 0;
 	display: flex; 
 	justify-content:space-around;
@@ -236,20 +249,9 @@ p {
 
 
 
-.ClickButton {
+.clickbutton {
 	margin-left: 45%;
 }
-/*
-CSS doesn't allow variables to be used in media
-queries just yet, but you can use these values
-to help you out.
-
-	--size-xs: 320px;
-	--size-sm: 480px;
-	--size-md: 768px;
-	--size-lg: 1024px;
-	--size-xl: 1200px;
-*/
 
 
 
@@ -261,6 +263,179 @@ to help you out.
 	}
 }
 
+@media (width >= 768px) {
+	.content-container {
+		margin: 0 auto;
+		max-width: 1200px;
+	}
 
+	.contact-image {
+		margin-top: 25%;
+		max-height: 80%;
+	}
+	
+	.contact-info-1 {
+		position: absolute;
+		top: 20%;
+		left: 1%;
+		transform: translate(-50%, -50%);
+	}
+	
+	.contact-info-2 {
+		position: absolute;
+		top: 28%;
+		left: 0%;
+		transform: translate(-50%, -50%);
+	}
+	
+	.social-media {
+		display: block;
+		margin-left: 5%;
+		position: absolute;
+		top: 90%;
+		left: 10%;
+		transform: translate(-50%, -50%);
+	}
+	
+	h3 {
+		font-size: 200%;
+		display: flex;
+		margin-right: 10%;
+		margin-top: 10%;
+	}
 
+	.start-image {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	
+	.custom-shape {
+		width: 100vw;
+		height: 100vh; 
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+	  }
+  
+	  .image-container {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	  }
 
+	.main-content-clickbutton {
+		display: flex;
+	}
+	
+	.clickbutton {
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 30%;
+	}
+	
+	.rooney-everton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 600px;
+		height: 550px;
+		margin-left: 70px;
+	}
+	
+	.rooney-mu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 600px;
+		height: 550px;
+		margin-left: 70px;
+	}
+
+	.rooney-dc {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 600px;
+		height: 550px;
+		margin-left: 70px;
+	}
+	
+	.heading-image {
+		margin-left: 50%;
+	}
+}
+
+@media (width >= 1024px) {
+	.contact-image {
+		margin-top: 0%;
+		margin-left: 20%;
+		display: flex;
+		align-items: right;
+		justify-content: right;
+		width: 80%;
+	}
+	
+	.contact-info-1 {
+		margin-left: 10%;
+		margin-top: 10%;
+	}
+	
+	.contact-info-2 {
+		margin-left: 10%;
+		margin-top: 10%;
+	}
+	
+	.social-media {
+		left: 5%;
+		margin-bottom: 5%;
+	}
+
+	h3 {
+		font-size: 280%;
+		display: flex;
+		margin-top: 10%;
+		margin-left: 40%;
+	}
+	
+	.start-content {
+		margin-right: 10%;
+	}
+	
+	.start-image {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	
+	.custom-shape {
+		width: 100vw; 
+		height: 100vh; 
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+	  }
+  
+	  .image-container {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	  }
+	  
+	  .whole-section {
+		display: flex;
+	  }
+
+	  .main-content {
+		margin-top: 35%;
+	  }
+
+	  .clickbutton {
+		height: 20%;
+		margin-top: 100%;
+	  }
+
+	  .heading-image {
+		margin-left: 45%;
+	  }
+	  
+	  .menu-h2 {
+		margin-top: 1%;
+	  }
+}
