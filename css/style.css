@@ -1,0 +1,475 @@
+/*
+CSS controls the styling of the page.
+You can write a color in directly, or use variables.
+Try changing the color from blue to red in the
+primary color variable below.
+*/
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 3rem;
+}
+
+body {
+	background-color:#0E1727;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+.top-bar {
+    background-color: #0E1727;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+	font-family: Rubik, sans-serif;
+	font-size: 95%;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	z-index: 9999;
+	width: 98%;
+}
+
+.top-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	width: 98%;
+	height: auto;
+}
+
+.top-bar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-h2 ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.top-bar li a:hover,
+.top-bar li a.active {
+	color:#0E1727;
+	background:#FFF;
+}
+
+.logo {
+	max-width: 100px;
+	width: 80%;
+}
+
+.menu-image {
+	opacity: 0.2;
+	width: 100%;
+}
+
+.menu-h2 {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+	font-family: Rubik, sans-serif;
+	font-size: 200%;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 12%;
+}
+
+.menu-h2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	width: 98%;
+}
+
+.menu-h2 ul li {
+    display: block;
+    margin-right: 20px;
+	margin-top: 100px;
+
+}
+
+
+.start-content {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	color: #FFF;
+	font-family: Rubik, sans-serif;
+	font-size: 350%;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 0.1;
+	
+}
+
+.start-image {
+	width: 100%;
+	height: auto;
+}
+
+.all {
+  background-color: #0E1727;
+}
+
+.heading-content {
+	display: flex;
+	align-items: center;
+}
+
+h1 {
+	color: #FFF;
+	font-family: Rubik, sans-serif;
+	font-size: 300%;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 0.1;
+	margin-bottom: 60px;
+	margin-top: 50px;
+  }
+
+.h2 {
+	color: #FFF;
+	font-family: Rubik, sans-serif;
+	font-size: 150%;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 0.1;
+}
+
+.everton-h2 {
+	color: #769BE1;
+	font-family: Rubik, sans-serif;
+	font-size: 150%;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 0.5;
+}
+
+.heading-image {
+	width: 18%;
+	height: auto;
+	margin-left: 10%;
+	text-align: center;
+}
+
+
+.rooney-everton {
+	width: 100%;
+	height: auto;
+}
+
+.rooney-mu {
+	width: 100%;
+	height: auto;
+}
+
+.rooney-dc {
+	width: 100%;
+	height: auto;
+}
+
+p {
+	color: #FFF;
+	font-family: Allerta, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.mu-h2 {
+	color: #F00;
+	font-family: Rubik, sans-serif;
+	font-size: 110%;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 0.5;
+}
+
+.dc-h2 {
+	color: #FFF;
+	font-family: Rubik, sans-serif;
+	font-size: 150%;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 0.5;
+}
+
+.highlight {
+	border-radius: 6px;
+	background: var(--cyan-600, #0AA2C0);
+	display: flex;
+	width: 172px;
+	height: 30px;
+	padding: 16px 24px;
+	align-items: center;
+	gap: 8px;
+	flex-shrink: 0;	
+	color: var(--default-white, #FFF);
+	text-align: center;
+	font-family: Inter, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	justify-content: center;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-content {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.contact-all {
+	width: 100vw;
+    height: 100vh;
+}
+
+.contact-image {
+	width: 100%;
+	height: auto;
+}
+
+.contact-info-1 {
+	margin-left: 20%;
+
+}
+
+.contact-info-2 {
+	margin-left: 20%;
+}
+
+.social-media {
+	margin-left: 0;
+	display: flex; 
+	justify-content:space-around;
+}
+
+.clickbutton {
+	margin-left: 45%;
+}
+
+video {
+	width: 100%;
+	height: auto;
+  }
+
+.game-image {
+	width: 90%;
+	height: auto;
+}
+
+.game-all {
+	width: 100vw;
+    height: 100vh;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+
+.game-words {
+	color: #FFF;
+	font-family: Allerta, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+
+
+.playbutton {
+	display: flex; 
+	align-items: center;
+    justify-content: center;
+}
+
+/* This uses the same value as --size-xs. */
+@media screen and (width >= 320px) {
+	.content-container {
+		margin: 0 auto;
+		max-width: 768px;
+	}
+}
+
+@media (width >= 768px) {
+	.content-container {
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+
+	.contact-image {
+		margin-top: 0%;
+		max-height: 80%;
+	}
+
+	
+	.social-media {
+		display: block;
+		margin-left: 20%;
+		
+	}
+	
+	h3 {
+		font-size: 200%;
+		display: flex;
+		margin-right: 10%;
+		margin-top: 10%;
+	}
+
+	.start-image {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	
+	.custom-shape {
+		width: 100vw;
+		height: 100vh; 
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+	  }
+  
+	  .image-container {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	  }
+
+	.main-content-clickbutton {
+		display: flex;
+	}
+	
+	.clickbutton {
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 30%;
+	}
+	
+	.rooney-everton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 600px;
+		height: 550px;
+		margin-left: 70px;
+	}
+	
+	.rooney-mu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 600px;
+		height: 550px;
+		margin-left: 70px;
+	}
+
+	.rooney-dc {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 600px;
+		height: 550px;
+		margin-left: 70px;
+	}
+	
+	.heading-image {
+		margin-left: 50%;
+	}
+}
+
+@media (width >= 1024px) {
+	.contact-image {
+		margin-top: 0%;
+		margin-left: 0%;
+		display: flex;
+		align-items: left;
+		justify-content: left;
+		width: 80%;
+	}
+	
+	.contact-info-1 {
+		margin-left: 10%;
+		margin-top: 2%;
+	}
+	
+	.contact-info-2 {
+		margin-left: 10%;
+		margin-top: 2%;
+	}
+	
+	.social-media {
+		left: 5%;
+		margin-bottom: 5%;
+	}
+
+	h3 {
+		font-size: 280%;
+		display: flex;
+		margin-top: 10%;
+		margin-left: 40%;
+	}
+	
+	.start-content {
+		margin-right: 10%;
+	}
+	
+	.start-image {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	
+	.custom-shape {
+		width: 100vw; 
+		height: 100vh; 
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+	  }
+  
+	  .image-container {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	  }
+	  
+	  .whole-section {
+		display: flex;
+	  }
+
+	  .main-content {
+		margin-top: 35%;
+	  }
+
+	  .clickbutton {
+		height: 20%;
+		margin-top: 100%;
+	  }
+
+	  .heading-image {
+		margin-left: 45%;
+	  }
+	  
+	  .menu-h2 {
+		margin-top: 1%;
+	  }
+
+	  .contact-info {
+		display: flex;
+		flex-direction: space-around;
+	  }
+}
