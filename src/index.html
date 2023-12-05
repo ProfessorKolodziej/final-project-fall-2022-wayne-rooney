@@ -25,6 +25,7 @@
                 <li><a href="#youngster" onclick="scrollToSection('#youngster')">Youngster</a></li>
                 <li><a href="#prime" onclick="scrollToSection('#prime')">Prime</a></li>
                 <li><a href="#decline" onclick="scrollToSection('#decline')">Declining</a></li>
+				<li><a href="#game" onclick="scrollToSection('#contact')">Game</a></li>
                 <li><a href="#contact" onclick="scrollToSection('#contact')">Contact</a></li>
                 
             </ul>
@@ -46,7 +47,6 @@
 	</section>	
 	</section>
 
-	
 	<section id="youngster">
 	<section class="whole-section">
 		<section class="heading-highlight">
@@ -82,7 +82,9 @@
 		<section class="main-content">
 		  <p>Wayne Rooney started his playing career at Everton and was promoted to the first team in 2002 at the age of 16, sitting on the reserve bench. In the warm-up match before the start of the 2002/03 season, Rooney scored 8 goals in 9 games. The first game of the season was against Tottenham at home on August 17, 2002. Rooney made his debut and was assigned to start the game, marking the beginning of Everton's 100th anniversary in the top league. On October 1, he scored twice at the end of the game against Wrexham in the League Cup, becoming the youngest goalscorer in Everton's history. On October 19, his goal against Arsenal at home broke the record for the youngest player to score in the Premier League.</p>
 			</section>
+			<a href="#prime">
 		<img id="moveDown" class="clickbutton" src="images/clickbutton.png" alt="ClickButton" onclick="moveToNextSection()">
+	</a>
 		</section>
 		</section>
 	</section>
@@ -126,8 +128,10 @@
 				Rooney's impact extended far beyond his impressive goal tally of 253, earning him a place among Manchester United's greatest players. He won three consecutive Premier League titles from 2006 to 2009, as well as a memorable UEFA Champions League victory in 2008, where Rooney's performance in the final against Chelsea left an indelible mark.
 				Rooney's trophy cabinet at Manchester United was adorned with an array of honors, encompassing five Premier League titles, an FA Cup, two Football League Cups, four FA Community Shields, a UEFA Champions League title, and a FIFA Club World Cup.</p>			
 			</section>
+			<a href="#decline">
 			<img class="clickbutton" src="images/clickbutton.png" alt="ClickButton">
-			</section>
+			</a>	
+		</section>
 			</section>
 		</section>
 
@@ -170,14 +174,35 @@
 						Rooney's impact was felt both on and off the field. As a player, his skill, experience, and leadership were instrumental in transforming D.C. United's performance. He played a crucial role in guiding the team to the MLS playoffs in the 2018 season, a significant achievement considering the team's struggling position before his arrival.
 						Wayne Rooney's tenure at D.C. United was marked by his impact, both in terms of the team's performance and the broader influence he had on the culture and standards of the club. His time in MLS remains an important chapter in his illustrious football career.</p>			
 				</section>
-				<img class="clickbutton" src="images/clickbutton.png" alt="ClickButton">
-				</section>
+				<a href="#game">
+				<img id="clickbutton" class="clickbutton" src="images/clickbutton.png" alt="ClickButton">
+			</a>	
+			</section>
 				</section>
 			</section>
 
-
+		<section id="game">
+			<div class="game-all">
+			<div class="game-title">
+				<h1>Let's Play!</h1>
+			</div>
+			<div class="game-image">
+				<video id="myVideo" controls>
+					<source src="image/v.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="game-words">
+				<h2>Click and Help Score the Goal!</h2>
+				<div class="button">
+				<button id="playbutton">click</button>
+			</div>
+			</div>
+			</div>
+			</section>
+			
 
 		<section id="contact">
+			<div class="contact-all">
 				<section class="contact-heading">
 					<h1>Contact</h1>
 					</section>
@@ -185,7 +210,7 @@
 					
 						<img class="contact-image" src="images/contact.png" alt="WayneRooneyContact">
 					
-				
+				<div class="contact-info">
 					<section class="contact-info-1">
 						<p>gzhang26@bu.edu</p>
 						<p>(999)999-9999</p>
@@ -195,6 +220,7 @@
 						<p>zhhhe@bu.edu</p>
 						<p>(888)888-8888</p>
 					</section>
+					</div>
 				
 					<section class="social-media">
 						<img class="facebook" src="images/facebook.png" alt="facebook">
@@ -202,10 +228,11 @@
 						<img class="ins" src="images/ins.png" alt="ins">
 						<img class="linkedin" src="images/linkedin.png" alt="linkedin">
 					</section>
+				</div>
 				</section>	
 		</div>
 				</section>
-				<script src="test.js"></script>
+				<script src="scripts.js"></script>
 </body>
 
 </html>

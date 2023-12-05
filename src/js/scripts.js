@@ -1,34 +1,28 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById("myVideo");
+    var playButton = document.getElementById("playbutton");
+    var fadeButton = document.getElementById("clickbutton");
 
-function smoothScroll(target, duration) {
-    var target = document.querrySelector(target);
-    var targetPosition = target.getBoundingClientRect().top;
-    var startPosition = window.pageYOffset;
-    var distance = targetPosition - startPosition;
-    var startTime = null;
+    playButton.addEventListener("click", function() {
+      if (video.paused) {
+        video.play();
+        playButton.innerText = "Pause Video";
+      } else {
+        video.pause();
+        playButton.innerText = "Play Video";
+      }
+    });
 
-    function animation(currentTime){
-        if(startTime === null ) startTime = currentTime;
-        var timeElapsed = currentTime - startTime;
-        var run = ease(timeElapsed,startPosition,distance,duration);
-        window.scrollTo(0,run);
-        if(timeElapsed < duration) requestAnimationFrame(animation);
-    }
-
-    function ease(t, b, c, d) {
-        t /= d / 2;
-        if(t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-    }
-
-    requestAnimationFrame(animation);
-}
-   
+    video.addEventListener("ended", function() {
+        window.location.href = "#contact";
+      });
     
+    fadeButton.addEventListener("click", function() {
+        fadeButton.classList.add("fade-out");
 
-
-var start = document.querrySelector('.start');
-
-start.addEventListener('click',function(){
-    smoothScroll('.youngster', 1000);
-})
+        setTimeout(function() {
+          fadeButton.classList.remove("fade-out");
+        }, 500);
+      });
+    
+  });

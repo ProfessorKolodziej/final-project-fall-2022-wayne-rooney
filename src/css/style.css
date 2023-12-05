@@ -26,6 +26,8 @@ body {
 	display: flex;
 	align-items: center;
 	position: fixed;
+	z-index: 9999;
+	width: 98%;
 }
 
 .top-bar ul {
@@ -230,6 +232,11 @@ p {
 	margin-right: 30px;
 }
 
+.contact-all {
+	width: 100vw;
+    height: 100vh;
+}
+
 .contact-image {
 	width: 100%;
 	height: auto;
@@ -250,13 +257,48 @@ p {
 	justify-content:space-around;
 }
 
-
-
 .clickbutton {
 	margin-left: 45%;
 }
 
+video {
+	width: 100%;
+	height: auto;
+  }
 
+.game-image {
+	width: 90%;
+	height: auto;
+}
+
+.game-all {
+	width: 100vw;
+    height: 100vh;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+
+.game-words {
+	color: #FFF;
+	font-family: Allerta, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+
+
+.playbutton {
+	display: flex; 
+	align-items: center;
+    justify-content: center;
+}
 
 /* This uses the same value as --size-xs. */
 @media screen and (width >= 320px) {
@@ -273,31 +315,15 @@ p {
 	}
 
 	.contact-image {
-		margin-top: 25%;
+		margin-top: 0%;
 		max-height: 80%;
 	}
-	
-	.contact-info-1 {
-		position: absolute;
-		top: 20%;
-		left: 1%;
-		transform: translate(-50%, -50%);
-	}
-	
-	.contact-info-2 {
-		position: absolute;
-		top: 28%;
-		left: 0%;
-		transform: translate(-50%, -50%);
-	}
+
 	
 	.social-media {
 		display: block;
-		margin-left: 5%;
-		position: absolute;
-		top: 90%;
-		left: 10%;
-		transform: translate(-50%, -50%);
+		margin-left: 20%;
+		
 	}
 	
 	h3 {
@@ -370,21 +396,21 @@ p {
 @media (width >= 1024px) {
 	.contact-image {
 		margin-top: 0%;
-		margin-left: 20%;
+		margin-left: 0%;
 		display: flex;
-		align-items: right;
-		justify-content: right;
+		align-items: left;
+		justify-content: left;
 		width: 80%;
 	}
 	
 	.contact-info-1 {
 		margin-left: 10%;
-		margin-top: 10%;
+		margin-top: 2%;
 	}
 	
 	.contact-info-2 {
 		margin-left: 10%;
-		margin-top: 10%;
+		margin-top: 2%;
 	}
 	
 	.social-media {
@@ -440,5 +466,10 @@ p {
 	  
 	  .menu-h2 {
 		margin-top: 1%;
+	  }
+
+	  .contact-info {
+		display: flex;
+		flex-direction: space-around;
 	  }
 }
