@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var video = document.getElementById("myVideo");
-    var playButton = document.getElementById("playbutton");
-    var fadeButton = document.getElementById("clickbutton");
+    let video = document.getElementById("myVideo");
+    let playButton = document.getElementById("playbutton");
+    let fadeButton = document.getElementById("clickbutton");
 
     playButton.addEventListener("click", function() {
       if (video.paused) {
